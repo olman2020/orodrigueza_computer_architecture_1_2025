@@ -9,8 +9,8 @@ Este proyecto realiza una interpolación bilineal sobre un cuadrante de una imag
 ├── interp.asm              # Código en ensamblador NASM que realiza la interpolación
 ├── main.py                 # Punto de entrada principal de la aplicación
 ├── GUI.py                  # Interfaz gráfica (Tkinter)
-├── ImageProcessor.py       # Lógica de procesamiento de imágenes
-├── constants.py            # Constantes usadas por la aplicación
+├── Procesador.py       # Lógica de procesamiento de imágenes
+├── Constantes.py            # Constantes usadas por la aplicación
 ├── entrada.jpg             # Imagen de entrada original
 ├── sin_interpolar.jpg      # Cuadrante original sin interpolar (97x97)
 ├── interpolado.jpg         # Resultado de la interpolación (385x385)
@@ -24,7 +24,7 @@ Este proyecto realiza una interpolación bilineal sobre un cuadrante de una imag
 - Paquetes:
   - `numpy`
   - `Pillow` (PIL)
-- NASM (ensamblador)
+- NASM (ensamblador x86-64)
 - `ld` (linker de Linux)
 
 Instalación de dependencias en Debian/Ubuntu:
@@ -33,6 +33,7 @@ Instalación de dependencias en Debian/Ubuntu:
 sudo apt update
 sudo apt install nasm python3 python3-pip
 pip install numpy Pillow
+
 ```
 
 ## 🚀 Ejecución
